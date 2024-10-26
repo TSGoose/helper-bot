@@ -1,0 +1,29 @@
+.container {
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    display: flex;
+    max-width: 610px;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-weight: 600;
+    height: 100vh;
+  }
+  
+  .mainSection {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .backgroundImage {
+    position: relative;
+    height: 100vh;
+    right: 0;
+    /* width: 100%; */
+    object-fit: cover;
+    object-position: center;
+  
+  }
