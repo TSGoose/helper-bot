@@ -5,17 +5,11 @@ import styles from './CompanyCard.module.css';
 export const CompanyCard = ({
 
     title,
-  
     description,
-  
     isSelected,
-  
     onChange,
-  
     value,
-  
     name,
-  
     id
   
   }) => {

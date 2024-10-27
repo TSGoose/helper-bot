@@ -26,21 +26,20 @@ export const Chat = (company) => {
         setUserInput('');
     
         try {
-          const response = await fetch('localhost/query_sib', {
+          const response = await fetch('https://2mj0ir-82-137-176-30.ru.tuna.am/query_sib', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({ 
-                message: userInput 
+                text: userInput 
             }),
           }
         );
     
           const data = await response.json();
     
-          // Добавляем ответ от API в список сообщений
-          const botMessage = { sender: 'bot', text: data.answer };
+          const botMessage = { sender: 'bot', text: data };
           setMessages((prevMessages) => [...prevMessages, botMessage]);
         } catch (error) {
           console.error('Error:', error);
