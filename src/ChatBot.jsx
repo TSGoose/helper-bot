@@ -30,7 +30,7 @@ const ChatBot = () => {
   }
 
   return (
-    <div className="chat-widget">
+    <div className={styles.back}>
       {/* Кнопка для открытия/закрытия чата
       <button className="chat-toggle-button" onClick={toggleChat}>
         {isOpen ? 'Закрыть' : 'Открыть чат'}
